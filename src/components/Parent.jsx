@@ -36,8 +36,8 @@ const Parent = () => {
 			</span>
 			<button onClick={addItemHandler}>Add Item</button>
 			<br />
-			<div className='child'>
-				<h3>Child Component</h3>
+			<h3>Child Component</h3>
+			<ul className='child'>
 				{itemList.map((item, index) => {
 					return (
 						<Child
@@ -48,7 +48,7 @@ const Parent = () => {
 						/>
 					);
 				})}
-			</div>
+			</ul>
 		</div>
 	);
 };
